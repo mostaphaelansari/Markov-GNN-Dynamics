@@ -1,0 +1,7 @@
+networkx>=3.0
+torch>=2.0
+torch-geometric>=2.3
+numpy>=1.24
+matplotlib>=3.7
+requests>=2.31
+
