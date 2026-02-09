@@ -4,4 +4,5 @@ torch-geometric>=2.3
 numpy>=1.24
 matplotlib>=3.7
 requests>=2.31
+scikit-learn>=1.2
 

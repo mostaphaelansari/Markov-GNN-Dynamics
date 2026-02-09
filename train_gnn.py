@@ -169,6 +169,9 @@ def main():
         if epoch % 20 == 0 or epoch == 1:
             print(f"Epoch {epoch:3d} | train BCE={loss.item():.4f} | test BCE={t_loss.item():.4f}")
 
+    # Save trained model for degree baseline comparison script
+    torch.save({"state_dict": model.state_dict(), "hidden_dim": 32}, "model_gnn.pt")
+
     # ---- Save plots folder ----
     os.makedirs("figures", exist_ok=True)
 
